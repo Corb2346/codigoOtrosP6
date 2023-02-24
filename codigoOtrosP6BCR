@@ -1,0 +1,29 @@
+package códigoOtrosP6;
+
+public class codigo6 {
+	
+	public static void main(String[] args) {
+		// se agrega la palabra reservada new para generar un array
+		 int n [] = new int[20];
+		 // se pone primero el nombre del arreglo y luego los corchetes
+		    for (int i = 0; i < 20; i++) {//se agregó otr o + ya que el operador adición funciona con dos ++
+		      n[i] = (int)(Math.random() * 381) + 20; //
+		      System.out.print(n[i] + " ");//falta el out para completar la expresion
+		    }
+		    
+		    System.out.println("\n¿Qué números quiere resaltar? ");//falta una n al final de println para compeletar la expresión
+		    System.out.print("(1 – los múltiplos de 5, 2 – los múltiplos de 7): ");
+		    int opcion = Integer.parseInt(System.console().readLine() ); //falta parentesis para cerrar paréntesis anidados
+
+		    int multiplo = (opcion == 1)? 5 : 7; // la esstructura está incorrecta es (condicion) ? valor1 : valor2; 
+
+		    foreach (char e : n) {
+		      if (e % multiplo == 0) {
+		        System.out.print("[" + e + "] ");
+		       else {
+		        System.in.print(e + " ");
+		      }
+		    }}
+	}
+		
+	 
